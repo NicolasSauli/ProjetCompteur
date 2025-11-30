@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Compteur interactif</title>
+</head>
+<body>
+
+<h1>Compteur websocket : <span id="ws_counter">0</span></h1>
+
+<nav>
+    <div class="cpt_plus">
+        <button onclick="sendIncrement()">Augmenter compteur</button>
+    </div>
+
+    <div class="cpt_moins">
+        <button onclick="sendDecrement()">Diminuer compteur</button>
+    </div>
+</nav>
+
+<script>
+const ws = new WebSocket("ws://127.0.0.1:8000/ws");
+
+ws.onopen = () => {
+  console.log("WebSocket connecté");
+};
+
+ws.onmessage = (event) => {
+  const data = JSON.parse(event.data);
+  document.getElementById("ws_counter").textContent = data.counterValue;
+};
+
+function sendIncrement() {
+  ws.send("inc"); // envoie la commande au serveur
+}
+
+function sendDecrement() {
+  ws.send("dec");
+}
+</script>
+
+</body>
+</html>
