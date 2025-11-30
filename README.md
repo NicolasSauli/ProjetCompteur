@@ -1,7 +1,8 @@
 # ProjetCompteur
 ## Sauli Nicolas
 Pour démarrer serveur :  uvicorn main:app --reload  
-uvicorn websocket_serveur:app --reload
+uvicorn websocket_serveur:app --reload  
+Pour arreter : ctrl + c
 
 ## Schéma polling :  
 <img width="464" height="582" alt="image" src="https://github.com/user-attachments/assets/e0ce6a33-d28b-40d2-90d7-3d58f1524e05" />
