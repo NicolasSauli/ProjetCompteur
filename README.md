@@ -5,7 +5,8 @@ uvicorn websocket_serveur:app --reload
 Pour arreter : ctrl + c
 
 ## Schéma polling :  
-<img width="464" height="582" alt="image" src="https://github.com/user-attachments/assets/e0ce6a33-d28b-40d2-90d7-3d58f1524e05" />
+<img width="589" height="449" alt="image" src="https://github.com/user-attachments/assets/7eede63c-7b3a-4418-8f7c-ec18644d3d9e" />
+
 
 
 ## Schéma websocket :  
