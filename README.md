@@ -10,5 +10,6 @@ Pour arreter : ctrl + c
 
 
 ## Schéma websocket :  
-<img width="694" height="427" alt="image" src="https://github.com/user-attachments/assets/5930c3e9-245c-4f69-ad26-0a4316b2cdda" />
+<img width="694" height="427" alt="image" src="https://github.com/user-attachments/assets/31ad790a-e9f2-4328-a07f-0eb781ee03ad" />
+
 
